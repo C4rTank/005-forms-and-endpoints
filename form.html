@@ -1,0 +1,130 @@
+<!doctype html>
+<head>
+    <title>Forms and Python API Endpoints</title>
+
+    <style>
+        label {
+            color: rgb(179, 255, 208);
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        body {
+            background-color:black;
+        }
+
+        input {
+            background-color: rgb(179, 255, 208);
+        }
+        #frame {
+            border:1px solid blue;
+            color: red;
+        }
+
+        input:hover {
+         background-color: rgb(64, 255, 137);
+         scale: 1.1;
+         transition: 0.15s;
+        }
+
+        select {
+        background-color: rgb(179, 255, 208);
+        }
+
+        form  { 
+        display: table;
+        }
+
+        div  { 
+        display: table-row;  
+        }
+        label { 
+        display: table-row; 
+        }
+        input { 
+        display: table-row; 
+        }
+    
+    </style>
+
+</head>
+    <body>
+        <body>
+            <form method="POST" action="http://127.0.0.1:5000/question">
+            <div>
+                <label for="NAME">A Name:</label>
+                <input type ="text" id="NAME" name="NAME" placeholder="Name" required></input>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="FRIEND">A Friend:</label>
+                <input type ="text" id="FRIEND" name="FRIEND" placeholder="Friend" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="PLACE">A Place:</label>
+                <input type ="text" id="PLACE" name="PLACE" placeholder="Place" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="COLOR">A Color:</label>
+                <input type ="text" id="COLOR" name="COLOR" placeholder="A Color" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="ADJECTIVE">A First Adjective:</label>
+                <input type ="text" id="ADJECTIVE" name="ADJECTIVE" placeholder="First Adjective" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="NOUN">A First Noun:</label>
+                <input type ="text" id="NOUN" name="NOUN" placeholder="First Noun" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="NOUN_2">A Second Noun:</label>
+                <input type ="text" id="NOUN_2" name="NOUN_2" placeholder="Second Noun" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="NOUN_3">A Third Noun:</label>
+                <input type ="text" id="NOUN_3" name="NOUN_3" placeholder="Third Noun" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="VERB_ING">A Verb with ing:</label>
+                <input type ="text" id="VERB_ING" name="VERB_ING" placeholder="Verb with ing" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="VERB_ING">A Profession:</label>
+                <input type ="text" id="PROFESSION" name="PROFESSION" placeholder="A Profession" required>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+
+        </form>
+    </body>
+</body>
